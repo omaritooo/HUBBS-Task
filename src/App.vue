@@ -1,28 +1,57 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <BaseSidebar />
+    <div class="content">
+      <Header />
+      <BlockUsers />
+      <BlockRefer />
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import BaseSidebar from './components/Base/BaseSidebar.vue';
+import BlockUsers from './components/Block/BlockUsers.vue';
+import BlockRefer from './components/Block/BlockRefer.vue';
+import Header from './components/TheHeader.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    BaseSidebar,
+    Header,
+    BlockUsers,
+    BlockRefer,
   },
 };
 </script>
 
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+@import './styles/classes.scss';
+@import './styles/variables.scss';
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+
+  margin: 0;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Roboto', sans-serif;
+
+  display: flex;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  background-color: #f7fbfe;
+}
+.content {
+  padding: 2.5rem 2rem;
+  flex-grow: 1;
 }
 </style>
