@@ -26,7 +26,6 @@
         href="#"
       >
         <svg
-          class="w-6 h-6 stroke-current"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
@@ -43,12 +42,7 @@
         <span v-if="toggle"> Home </span>
       </a>
 
-      <a
-        class="sidebar__tab"
-        aria-label="link to this heading"
-        aria-describedby="introduction"
-        href="#"
-      >
+      <a class="sidebar__tab" aria-label="Search" aria-describedby="Search" href="#">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -65,12 +59,7 @@
         <span v-if="toggle">Search</span>
       </a>
 
-      <a
-        aria-label="link to this heading"
-        aria-describedby="introduction"
-        class="sidebar__tab"
-        href="#"
-      >
+      <a aria-label="Stats" aria-describedby="Stats" class="sidebar__tab" href="#">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -87,14 +76,8 @@
         </svg>
         <span v-if="toggle"> Stats </span>
       </a>
-      <a
-        aria-label="link to this heading"
-        aria-describedby="introduction"
-        class="sidebar__tab"
-        href="#"
-      >
+      <a aria-label="Tabs" aria-describedby="Tabs" class="sidebar__tab" href="#">
         <svg
-          class="w-6 h-6 stroke-current"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
@@ -113,14 +96,8 @@
     </div>
     <div class="divider mt-3"></div>
     <div class="d-flex flex-column items-center border-t border-gray-300">
-      <a
-        aria-label="link to this heading"
-        aria-describedby="introduction"
-        class="sidebar__tab"
-        href="#"
-      >
+      <a aria-label="Cart" aria-describedby="Cart" class="sidebar__tab" href="#">
         <svg
-          class="w-6 h-6 stroke-current"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
@@ -134,15 +111,10 @@
             1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
           />
         </svg>
+        <span v-if="toggle">Cart</span>
       </a>
-      <a
-        aria-label="link to this heading"
-        aria-describedby="introduction"
-        class="sidebar__tab"
-        href="#"
-      >
+      <a aria-label="Options" aria-describedby="Options" class="sidebar__tab" href="#">
         <svg
-          class="w-6 h-6 stroke-current"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
@@ -156,13 +128,9 @@
             4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
           />
         </svg>
+        <span v-if="toggle">Options</span>
       </a>
-      <a
-        aria-label="link to this heading"
-        aria-describedby="introduction"
-        class="sidebar__tab"
-        href="#"
-      >
+      <a aria-label="Messages" aria-describedby="Messages" class="sidebar__tab" href="#">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -180,19 +148,8 @@
         <span v-if="toggle">Messages</span>
       </a>
     </div>
-    <a
-      aria-label="link to this heading"
-      aria-describedby="introduction"
-      class="sidebar__tab"
-      href="#"
-    >
-      <svg
-        class="w-6 h-6 stroke-current"
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
+    <a aria-label="User" aria-describedby="User" class="sidebar__tab" href="#">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path
           stroke-linecap="round"
           stroke-linejoin="round"
@@ -201,6 +158,7 @@
            1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
         />
       </svg>
+      <span v-if="toggle">User</span>
     </a>
     <button @click="toggleSidebar" class="sidebar__button">
       <svg
@@ -210,7 +168,6 @@
         viewBox="0 0 24 24"
         stroke-width="1.5"
         stroke="currentColor"
-        class="w-6 h-6"
       >
         <path
           stroke-linecap="round"
@@ -225,7 +182,6 @@
         viewBox="0 0 24 24"
         stroke-width="1.5"
         stroke="currentColor"
-        class="w-6 h-6"
       >
         <path
           stroke-linecap="round"
